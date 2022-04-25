@@ -1,4 +1,4 @@
-# # SaltWaterDistortion Dataset
+# SaltWaterDistortion Dataset
 
 SWD (Salt Water Distortion) dataset is the new image dataset in order to underwater distortion estimation and correction. 
 Images were collected in water of various salinity (<1%, 13%, 25%, 40%) via two smartfone cameras with different angle of view and focal lengths. New dataset includes 689 underwater photos of calibration chessboard, for each image all corners of the chessboard squares were manually marked (35,748 corners in total).
@@ -18,7 +18,7 @@ In root directory there are two directories correspondending to two cameras: mai
 Name of markup file corresponding to the image is formed by concatenating to the image name ".json" extension.
 Some directories include the "bad" directory, that includes manually excluded photos (blurry or with light highlights).
 
-```
+```json
 -SWD/
     -main/
         -air/
@@ -56,7 +56,8 @@ Coordinates of the corners of the chessboard squares were detected for each imag
 Markup file includes information of coords of all 54 internal corners of the chessboard squares. The corners are numbered horizontally from upper left to lower right, i.e. in the top row from left to right located numbers from 1 to 9, in the second row from 10 to 18, etc.
 
 The example of the markup:
-```
+
+```json
 {
   "objects": [
     {
@@ -87,44 +88,47 @@ The example of the markup:
   ]
 }
 ```
+
 ### Description of the calibration params
 
 Calibration params are stored in json-format. It contain the following information: camera matrix, distortion coefficients, projection matrix, rectification matrix, distortion model, image height, image width. Matrices contain next fields: rows, cols and data, which allow us to read and use it easily.
 
+```json
 {
-	"camera_matrix" : 
-	{
-		"cols" : 3,
-		"data" : 
-		[
-			1521.8377924562817,
-			0,
-			731.01211191674577,
-			0,
-			1521.8377924562817,
-			545.93222920448102,
-			0,
-			0,
-			1
-		],
-		"rows" : 3
-	},
-	"distortion_coefficients" : 
-	{
-		...
-	},
-	"distortion_model" : "rational_polynomial",
-	"image_height" : 1094,
-	"image_width" : 1459,
-	"projection_matrix" : 
-	{
+  "camera_matrix" : 
+  {
+    "cols" : 3,
+    "data" : 
+    [
+      1521.8377924562817,
+      0,
+      731.01211191674577,
+      0,
+      1521.8377924562817,
+      545.93222920448102,
+      0,
+      0,
+      1
+      ],
+    "rows" : 3
+  },
+  "distortion_coefficients" : 
+  {
     ...
-	},
-	"rectification_matrix" : 
-	{
-		...
-	}
+  },
+  "distortion_model" : "rational_polynomial",
+  "image_height" : 1094,
+  "image_width" : 1459,
+  "projection_matrix" : 
+  {
+    ...
+  },
+  "rectification_matrix" : 
+  {
+    ...
+  }
 }
+```
 
 ### Description of the images
 
