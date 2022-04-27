@@ -3,13 +3,23 @@
 SWD (Salt Water Distortion) dataset is the new image dataset in order to underwater distortion estimation and correction. 
 Images were collected in water of various salinity (<1%, 13%, 25%, 40%) via two smartfone cameras with different angle of view and focal lengths. New dataset includes 689 underwater photos of calibration chessboard, for each image all corners of the chessboard squares were manually marked (35,748 corners in total).
 
-## Online Repository link
+## Download
 
-* [DataRepository](ftp://vis.iitp.ru/SWD/) - Link to the data repository.
+Data is avalilable on zenodo.org and the FTP mirror under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+
+* [SWD](https://zenodo.org/record/6475916) can be downloaded with the following commands
+
+```bash
+pip install zenodo-get
+zenodo_get https://zenodo.org/record/6475916 --output-dir=SWD
+```
+
+* FTP mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/SWD)
 
 ### Files formats
 
 Photos format: .jpg
+
 Markup files format: .json
 
 ### Description of the data
@@ -18,7 +28,7 @@ In root directory there are two directories correspondending to two cameras: mai
 Name of markup file corresponding to the image is formed by concatenating to the image name ".json" extension.
 Some directories include the "bad" directory, that includes manually excluded photos (blurry or with light highlights).
 
-```json
+```
 -SWD/
     -main/
         -air/
