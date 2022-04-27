@@ -59,6 +59,11 @@ Some directories include the "bad" directory, that includes manually excluded ph
 -README.md
 ```
 
+### Description of the images
+
+The shooting was done by using modern smartphone Huawei Mate 20 Pro. Data was collected on two cameras: normal (focal lenght 2.35 mm) and wide-angle cameras (focal lenght 7.48 mm). Image size is same for both cameras and is 1459 х 1094 pixels. Chessboard was used as calibration object. Chessboard size is 13х9.1 centimeters and chessboard square side length is 1.3 cm (10х7 squares).
+The underwater shooting was done by using aquarium with tap water (salnity less than 1%). Collected fresh water dataset includes 62 and 56 images for each camera respectively. Then salnity was increased using table salt to 13, 27 and 40%. Obtained salt water datasets includes respectively 45, 85, 91 images for normal angle camera and 47, 89, 80 images for wide-angle camera.
+
 ### Description of the markup
 
 Coordinates of the corners of the chessboard squares were detected for each image by hand. Each point coordinates were marked with subpixel accuracy. Depending on the situation to the prototype corner of the chessboard square was set into correspondence either the point in the middle of the pixel or the point of pixel lattice or the point in the middle of side between two neighboring pixels.
@@ -139,11 +144,6 @@ Calibration params are stored in json-format. It contain the following informati
   }
 }
 ```
-
-### Description of the images
-
-The shooting was done by using modern smartphone Huawei Mate 20 Pro. Data was collected on two cameras: normal (focal lenght 2.35 mm) and wide-angle cameras (focal lenght 7.48 mm). Image size is same for both cameras and is 1459 х 1094 pixels. Chessboard was used as calibration object. Chessboard size is 13х9.1 centimeters and chessboard square side length is 1.3 cm (10х7 squares).
-The underwater shooting was done by using aquarium with tap water (salnity less than 1%). Collected fresh water dataset includes 62 and 56 images for each camera respectively. Then salnity was increased using table salt to 13, 27 and 40%. Obtained salt water datasets includes respectively 45, 85, 91 images for normal angle camera and 47, 89, 80 images for wide-angle camera.
 
 ## Specificity of the images
 
