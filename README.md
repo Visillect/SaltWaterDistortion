@@ -14,7 +14,7 @@ pip install zenodo-get
 zenodo_get https://zenodo.org/record/6475916 --output-dir=SWD
 ```
 
-* FTP mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/SWD)
+* FTP mirror [ftp://vis.iitp.ru/SWD](ftp://vis.iitp.ru/SWD)
 
 ### Files formats
 
