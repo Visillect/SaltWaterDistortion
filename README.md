@@ -1,7 +1,7 @@
 # SaltWaterDistortion Dataset
 
 SWD (Salt Water Distortion) dataset is the new image dataset in order to underwater distortion estimation and correction. 
-Images were collected in water of various salinity (<1%, 13%, 25%, 40%) via two smartfone cameras with different angle of view and focal lengths. New dataset includes 689 underwater photos of calibration chessboard, for each image all corners of the chessboard squares were manually marked (35,748 corners in total).
+Images were collected in water of various salinity (<1%, 13%, 25%, 40%) via two smartfone cameras with different angle of view and focal lengths. New dataset includes 662 underwater photos of calibration chessboard, for each image all corners of the chessboard squares were manually marked (35,748 corners in total).
 
 ## Download
 
